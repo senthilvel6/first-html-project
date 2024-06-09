@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="index.css">
+      
+      <title>Book</title>
+    </head>
+    <body>
+        <div class="nav">
+            <h1>Books</h1>
+        </div>
+
+        <div class="container">
+            <div class="book-container">
+               <h2>Title</h2>
+               <h4>Author</h4>
+               <p>Description,
+                This is the format
+                (what book did you read recently?)
+               </p>
+               <button onclick="del(event)">Delete</button>
+            </div>
+           
+        </div>
+        <div class="i-overlay"></div>
+        <div class="popup">
+            <h2>Add Book</h2>
+            <form>
+                <input  placeholder="Book Name" class="Book-Name" id="Bname">
+                <input  placeholder="Author Name" class="Author-Name" id="Aname">
+                <textarea placeholder="Book Description"  id="Bdesc"></textarea>
+                <button  id="add" >ADD</button>
+                <button  id="cancel">Cancel</button>
+            </form>
+        </div>
+        <button class="plus-button" id="addbtn" >+</button>
+        <script src="index.js"></script>
+    </body>
+</html>
